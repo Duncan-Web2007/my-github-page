@@ -16,6 +16,9 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="#">Cart (<span id="cart-count">0</span>)</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
         </nav>
   </header>
 
@@ -31,7 +34,7 @@
   <!--Row for the books-->
   <h2 class="mt-5">ROMANCE</h2>
 
-<div class="row flex-column">
+<div class="row g-4">
 
     <div class="col-md-4">
      <div class="card">
@@ -41,11 +44,17 @@
           <h5 class="card-title">Between a Highlander and a Hard Place</h5>
           <p class="card-text">By Mary Wine</p>
           <p class="card-text"><strong>P120</strong></p>
-        </div>
+
+          <button onclick="addToCart('Between a Highlander and a Hard Place')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+        
       </div>
     </div>
    </div>
   
+
     <div class="col-md-4">
     <div class="card">
       <img src="images/scandal.jpeg"
@@ -54,6 +63,11 @@
         <h5 class="card-title">My Season Of Scandal</h5>
         <p class="card-text">By Julie Anne Long</p>
         <p class="card-text"><strong>P120</strong></p>
+
+        <button onclick="addToCart('My Season Of Scandal')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
       </div>
 
     </div>
@@ -68,11 +82,17 @@
           <h5 class="card-title">Bridgerton</h5>
           <p class="card-text">By Julia Quinn</p>
           <p class="card-text"><strong>P350</strong></p>
-        </div>
+
+          <button onclick="addToCart('Bridgerton')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+        
       </div>
     </div>
    </div>
   
+
 <div class="col-md-4">
      <div class="card">
         <img src="images/ton.jpeg"
@@ -81,10 +101,16 @@
           <h5 class="card-title">Bridgerton</h5>
           <p class="card-text">By Julia Quinn</p>
           <p class="card-text"><strong>P350</strong></p>
-        </div>
+
+          <button onclick="addToCart('Bridgerton')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+        
       </div>
     </div>
    </div>
+
 
    <div class="col-md-4">
      <div class="card">
@@ -94,10 +120,16 @@
           <h5 class="card-title">My Fake Wedding</h5>
           <p class="card-text">By Andrea L. Smith</p>
           <p class="card-text"><strong>P150</strong></p>
-        </div>
+        
+          <button onclick="addToCart('My Fake Wedding')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
       </div>
     </div>
    </div>
+
 
    <div class="col-md-4">
      <div class="card">
@@ -107,10 +139,16 @@
           <h5 class="card-title">I'm Married to Your Rival Now</h5>
           <p class="card-text">By Blazers990</p>
           <p class="card-text"><strong>P180</strong></p>
-        </div>
+
+          <button onclick="addToCart('Im Married to Your Rival Now')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+        
       </div>
     </div>
    </div>
+
 
   <div class="col-md-4">
      <div class="card">
@@ -120,10 +158,16 @@
           <h5 class="card-title">Bed of Roses</h5>
           <p class="card-text">By DV Fischer</p>
           <p class="card-text"><strong>P100</strong></p>
-        </div>
+
+          <button onclick="addToCart('Bed of Roses')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+        
       </div>
     </div>
    </div>
+
 
    <div class="col-md-4">
      <div class="card">
@@ -133,26 +177,35 @@
           <h5 class="card-title">Something Like Love</h5>
           <p class="card-text">Beverly Jenkins</p>
           <p class="card-text"><strong>P80</strong></p>
-        </div>
+
+          <button onclick="addToCart('Something Like love')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+        
       </div>
     </div>
    </div>
+
 
    <div class="col-md-4">
      <div class="card">
         <img src="images/yours.jpeg"
-        class="card-img-top" alt="Technnically Yours">
+        class="card-img-top" alt="Technically Yours">
         <div class="card-body">
           <h5 class="card-title">Technically Yours</h5>
           <p class="card-text">By Denise Williams</p>
           <p class="card-text"><strong>P100</strong></p>
-        </div>
+        
+          <button onclick="addToCart('Technically Yours')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
       </div>
     </div>
    </div>
 
-  
-   </div>
 
    <div class="col-md-4">
      <div class="card">
@@ -162,10 +215,16 @@
           <h5 class="card-title">Bridgerton</h5>
           <p class="card-text">By Julia Quinn</p>
           <p class="card-text"><strong>P350</strong></p>
-        </div>
+
+          <button onclick="addToCart('Bridgerton')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
       </div>
     </div>
   </div>
+
 
   <h2 class="mt-5">THRILLER</h2>
   <div class="row">
@@ -179,10 +238,16 @@
         <h5 class="card-title">Cage of Bones</h5>
         <p>By Tania Carver</p>
         <p><strong>P200</strong></p>
-       </div>
 
+       <button onclick="addToCart('Cage of Bones')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
+       </div>
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -193,10 +258,17 @@
         <h5 class="card-title">The Dead can Wait</h5>
         <p>By Robert Ryan</p>
         <p><strong>P150</strong></p>
+
+        <button onclick="addToCart('The Dead can Wait')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -207,10 +279,17 @@
         <h5 class="card-title">Only Murder</h5>
         <p>By Rylie Dark</p>
         <p><strong>P300</strong></p>
+
+        <button onclick="addToCart('Only Murder')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -221,10 +300,17 @@
         <h5 class="card-title">The Night of the Storm</h5>
         <p>By Nishita Parekh</p>
         <p><strong>P180</strong></p>
+
+        <button onclick="addToCart('The Night of the Storm')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -235,10 +321,17 @@
         <h5 class="card-title">All her little Secrets</h5>
         <p>By Wanda M. Morris</p>
         <p><strong>P120</strong></p>
+
+        <button onclick="addToCart('All her little Secrets')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -249,10 +342,17 @@
         <h5 class="card-title">Like a Sister</h5>
         <p>By Kellye Garrett</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('Like a Sister')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -263,10 +363,17 @@
         <h5 class="card-title">The Perfect Stranger</h5>
         <p>By Megan Miranda</p>
         <p><strong>P180</strong></p>
+
+        <button onclick="addToCart('The Perfect Stranger')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -277,10 +384,17 @@
         <h5 class="card-title">Then she was Dead</h5>
         <p>By Jane Adams</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('The she was Dead')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -291,10 +405,17 @@
         <h5 class="card-title">The silent Wife</h5>
         <p>By Karin Slaughter</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('The silent Wife')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
     </div>
+
 
      <div class="col-md-3 mb-4">
     <div class="card">
@@ -305,6 +426,12 @@
         <h5 class="card-title">The HouseMaid</h5>
         <p>By Freida McFadden</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('The HouseMaid')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
        </div>
 
     </div>
@@ -317,6 +444,7 @@
   <div class="col-md-3 mb-4">
     <div class="card">
 
+
       <img src="images/book.jpeg"
       class="card-img-top">
 
@@ -324,10 +452,17 @@
         <h5 class="card-body">The Book of Magic</h5>
         <p>By Gardner Dozois</p>
         <p><strong>P250</strong></p>
+
+        <button onclick="addToCart('The Book of Magic')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -339,10 +474,17 @@
         <h5 class="card-body">Mind over Magic</h5>
         <p>By Lindsay Buroker</p>
         <p><strong>P180</strong></p>
+
+        <button onclick="addToCart('Mind over Magic')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -354,10 +496,17 @@
         <h5 class="card-body">Lost Magic</h5>
         <p>By R.J Vickers</p>
         <p><strong>P150</strong></p>
+
+        <button onclick="addToCart('Lost Magic')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -369,10 +518,17 @@
         <h5 class="card-body">A Desolation Called Peace</h5>
         <p>By Arkady Martine</p>
         <p><strong>P250</strong></p>
+
+        <button onclick="addToCart('A Desolation Called Peace')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -384,10 +540,17 @@
         <h5 class="card-body">Reign of Stars and Fire</h5>
         <p>By LJ Andrews</p>
         <p><strong>P400</strong></p>
+
+        <button onclick="addToCart('Reign of Stars and Fire')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -399,10 +562,17 @@
         <h5 class="card-body">The Amber Crown</h5>
         <p>By Jacey Bedford</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('The Amber Crown')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -414,10 +584,17 @@
         <h5 class="card-body">The Luminous Dead</h5>
         <p>By Caitlin Starling</p>
         <p><strong>P250</strong></p>
+
+        <button onclick="addToCart('The Luminous Dead')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -429,10 +606,17 @@
         <h5 class="card-body">Children of Time</h5>
         <p>By Adrian Tchaikovsky</p>
         <p><strong>P350</strong></p>
+
+        <button onclick="addToCart('Children of Time')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -444,10 +628,17 @@
         <h5 class="card-body">Critical Mass</h5>
         <p>By Daniel Suarez</p>
         <p><strong>P180</strong></p>
+
+        <button onclick="addToCart('Critical Mass')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
  <div class="col-md-3 mb-4">
     <div class="card">
@@ -459,10 +650,17 @@
         <h5 class="card-body">A New Eden</h5>
         <p>By Menilik Henry Dyer</p>
         <p><strong>P100</strong></p>
+
+        <button onclick="addToCart('A New Eden')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
   
   </div>
 </div>
+
 
 <h2 class="mt-5">KIDS</h2>
 <div class="row">
@@ -477,10 +675,17 @@
         <h5 class="card-title">The Jungle Book</h5>
         <p>By Rudyard Kipling</p>
         <p><strong>P80</strong></p>
+
+        <button onclick="addToCart('The Jungle Book')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
 
   </div>
 </div>
+
 
 <div class="col-md-3 mb-4">
     <div class="card"> 
@@ -492,10 +697,17 @@
         <h5 class="card-title">Destiny Awaits</h5>
         <p>By Bethany Baptiste</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('Destiny Awaits')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
+
 
 <div class="col-md-3 mb-4">
     <div class="card"> 
@@ -507,11 +719,18 @@
         <h5 class="card-title">Lost Legends</h5>
         <p>By Jen Calonita</p>
         <p><strong>P100</strong></p>
+
+        <button onclick="addToCart('Lost Legends')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
     
+
 <div class="col-md-3 mb-4">
     <div class="card"> 
 
@@ -522,11 +741,18 @@
         <h5 class="card-title">A Kid Like Me</h5>
         <p>By Norm Feuti</p>
         <p><strong>P20</strong></p>
+
+        <button onclick="addToCart('A Kid Like Me')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
     
+
 <div class="col-md-3 mb-4">
     <div class="card"> 
 
@@ -537,10 +763,17 @@
         <h5 class="card-title">Then and Now</h5>
         <p>By Glen Downey</p>
         <p><strong>P30</strong></p>
+
+        <button onclick="addToCart('Then and Now')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
+
 
 <div class="col-md-3 mb-4">
     <div class="card"> 
@@ -552,11 +785,18 @@
         <h5 class="card-title">Charlotte's Web</h5>
         <p>By Stuard Little</p>
         <p><strong>P20</strong></p>
+
+        <button onclick="addToCart('Charlotte')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
     
+
 <div class="col-md-3 mb-4">
     <div class="card"> 
 
@@ -567,10 +807,17 @@
         <h5 class="card-title">LightFall</h5>
         <p>By Tim Probert</p>
         <p><strong>P100</strong></p>
+
+        <button onclick="addToCart('LightFall')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
+
 
 <div class="col-md-3 mb-4">
     <div class="card"> 
@@ -582,11 +829,18 @@
         <h5 class="card-title">When Do Hippos Play</h5>
         <p>By David Errico</p>
         <p><strong>P30</strong></p>
+
+        <button onclick="addToCart('When Do Hippos Play')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
     
+
 <div class="col-md-3 mb-4">
     <div class="card"> 
 
@@ -594,14 +848,21 @@
       class="card-img-top">
 
       <div class="card-body">
-        <h5 class="card-title">The Jungle Book</h5>
+        <h5 class="card-title">The Last Kids On Earth </h5>
         <p>By Max Brallier</p>
         <p><strong>P50</strong></p>
+
+        <button onclick="addToCart('The Last Kids On Earth')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
     
+
 <div class="col-md-3 mb-4">
     <div class="card"> 
 
@@ -612,6 +873,11 @@
         <h5 class="card-title">The Lionharts</h5>
         <p>By Mike Lawrence</p>
         <p><strong>P80</strong></p>
+
+        <button onclick="addToCart('The Lionharts')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
     </div>
     
   </div>
@@ -630,10 +896,17 @@
         <h5 class="card-title">Stop Wishing Start Creating</h5>
         <p class="card-text">By Gertrude Marie</p>
         <p><strong>P250</strong></p>
+
+        <button onclick="addToCart('Stop Wishing Start Creating')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
 
   </div>
 </div>
+
 
 <div class="col-md-4">
     <div class="card">
@@ -644,11 +917,18 @@
         <h5 class="card-title">How To Be Creative</h5>
         <p class="card-text">By Neil Pavitt</p>
         <p><strong>P250</strong></p>
+
+        <button onclick="addToCart('How To Be Creative')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
     
+
 <div class="col-md-4">
     <div class="card">
       <img src="images/ofthe.jpeg"
@@ -658,10 +938,17 @@
         <h5 class="card-title">Stop Wishing Start Creating</h5>
         <p class="card-text">By Robert A. Newton</p>
         <p><strong>P500</strong></p>
+
+        <button onclick="addToCart('Stop Wishing Start Creating')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
+
 
 <div class="col-md-4">
     <div class="card">
@@ -672,10 +959,17 @@
         <h5 class="card-title">The rebirth of You</h5>
         <p class="card-text">By Megan Austin</p>
         <p><strong>P150</strong></p>
+
+        <button onclick="addToCart('The rebirth of You')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>    
+
 
     <div class="col-md-4">
     <div class="card">
@@ -686,6 +980,12 @@
         <h5 class="card-title">By His Stripes!</h5>
         <p class="card-text">By Linda D. Lee</p>
         <p><strong>P350</strong></p>
+
+        <button onclick="addToCart('By His Stripes!')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
@@ -701,6 +1001,12 @@
         <h5 class="card-title">The Future of Energy</h5>
         <p class="card-text">By John Armstrong</p>
         <p><strong>P120</strong></p>
+
+        <button onclick="addToCart('The Future of Energy')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
@@ -710,17 +1016,24 @@
 
 <div class="col-md-4">
     <div class="card">
-      <img src="images/road .jpeg"
+      <img src="images/road.jpeg"
       class="card-img-top" alt="Book cover">
 
       <div class="card-body">
         <h5 class="card-title">The Lonely Road We Traveled</h5>
         <p class="card-text">By Kathrine Moss</p>
         <p><strong>P200</strong></p>
+
+        <button onclick="addToCart('The Lovely Road We Traveled')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
+
 
 <div class="col-md-4">
     <div class="card">
@@ -731,6 +1044,12 @@
         <h5 class="card-title">Sunsets with Anne</h5>
         <p class="card-text">By Gretchen Fergusson</p>
         <p><strong>P180</strong></p>
+
+        <button onclick="addToCart('Between a Highlander and a Hard Place')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
@@ -746,6 +1065,12 @@
         <h5 class="card-title">Never Give Up</h5>
         <p class="card-text">By E.Z jones</p>
         <p><strong>P80</strong></p>
+
+        <button onclick="addToCart('Never Give Up')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
@@ -761,40 +1086,16 @@
         <h5 class="card-title">The Ultimate Anxiety Free</h5>
         <p class="card-text">By Christopher Moss</p>
         <p><strong>P100</strong></p>
+
+        <button onclick="addToCart('The Ultimate Anxiety Free')"
+          class="btn btn-primary">
+            Add to Cart
+          </button>
+
     </div>
     
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  
-
-
-  </div>
-
 
 
 
@@ -807,7 +1108,18 @@
 
   <!--Bootstrap JS and dependencies-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https//cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.js"></script>
+  <script src="https//cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    let cartCount = 0;
+    function addToCart(book) {
+      cartCount++;
+      document.getElementById("cart-count").innerText = cartCount;
+      alert(book + " added to cart!");
+    }
+
+  </script>
+
 </body>
 </html>
 
