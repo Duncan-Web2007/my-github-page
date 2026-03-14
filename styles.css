@@ -18,7 +18,7 @@ header h1 {
 nav a {
     color: white;
     text-decoration: none;
-    margin 0 10px;
+    margin: 0 10px;
 }
 nav a:hover {
     text-decoration: underline;
@@ -44,3 +44,34 @@ a {
  a:hover {
     text-decoration: underline;
  } 
+
+ /* Book images */
+ .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+ }
+
+ .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 25px;
+    
+ }
+
+ .card{
+    transform: scale(1.03);
+    transition: 0.3s;
+ }
+
+ .card-body {
+    text-align: center;
+ }
+ 
+ h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+ }
