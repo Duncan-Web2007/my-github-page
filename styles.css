@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #dfefff;
+  background-color: #d3d3d3;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -97,4 +97,9 @@ a {
     color: white;
     border: none;
     border-radius : 5px;
+ }
+
+ body{
+   background-color: #0f2a44;
+   color: white;
  }
