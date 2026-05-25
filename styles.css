@@ -62,7 +62,7 @@ a {
  }
 
  .card{
-    transform: scale(1.03);
+     transform: scale(1.03);
     transition: 0.3s;
  }
 
